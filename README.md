@@ -1,4 +1,4 @@
-## AI compilers studying materials 
+## AI compilers study materials 
 
 ### Description
 This repository is intended to help someone who wants to start working on the fields of AI compilers and systems.
