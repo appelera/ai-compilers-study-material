@@ -21,9 +21,9 @@ I've curated the most useful resources I've found so far.
 - [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
 - There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
 - I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as:
-  - https://arxiv.org/pdf/2411.07211
   - https://arxiv.org/pdf/2311.02103
   - https://arxiv.org/pdf/2504.07004
+  - https://arxiv.org/pdf/2411.07211
 - FlashAttention series are also recommended to understand the gist of kernel optimization for LLMs.
   - https://arxiv.org/pdf/2205.14135
   - https://arxiv.org/pdf/2307.08691
