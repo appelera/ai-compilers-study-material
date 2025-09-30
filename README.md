@@ -20,10 +20,8 @@
   - https://arxiv.org/pdf/2311.01282
 
 ### Open-source projects
-- [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) are the OG open-source standards, but their popularity is going down these days.
-- At the state of 2025, PyTorch 2 compilers[[paper](https://dl.acm.org/doi/abs/10.1145/3620665.3640366)] + Triton are the modern tools:
-  - paper: , https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf
-  - repo: https://github.com/pytorch/pytorch/tree/main/torch/_inductor, https://github.com/triton-lang/triton
+- [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) are the OG open-source standards, but their popularity seems like going down these days.
+- At the state of 2025, PyTorch 2 compilers[[paper](https://dl.acm.org/doi/abs/10.1145/3620665.3640366)][[repo](https://github.com/pytorch/pytorch/tree/main/torch/_inductor)] with Triton[[paper](https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf)][[repo](https://github.com/triton-lang/triton)] are a good choice.
 - For more lower-level GPU optimizations (lower than Triton yet higher than CUDA), refer to [CUTLASS](https://docs.nvidia.com/cutlass/index.html).
 
 ### Hands-on tutorials
@@ -33,13 +31,13 @@
 - Triton
   - https://github.com/srush/Triton-Puzzles
   - https://triton-lang.org/main/getting-started/tutorials/index.html
-- TorchDynamo & TorchInductor
+- PyTorch 2 compilers
   - https://github.com/meta-pytorch/workshops/tree/master/ASPLOS_2024
   - https://docs.google.com/document/d/1zY9Nlmh5jT39Q92aDYf3dHOAXh2xCMdeS6pnbX0Dqpw/edit?tab=t.0#heading=h.8exgp9nti6e2
  
-### Other materials
+### Other useful materials
 - [GPU MODE Youtube channel](https://www.youtube.com/@GPUMODE)
-- [AI compilers study by Taehoon Kim](https://carpedm30.notion.site/AI-Compiler-Study-aaf4cff2c8734e50ad95ac6230dbd80b)
+- [AI compilers study](https://carpedm30.notion.site/AI-Compiler-Study-aaf4cff2c8734e50ad95ac6230dbd80b)
 - [Matrix Multiplication on Blackwell](https://www.modular.com/categories/engineering)
 - [How to Scale Your Model: A Systems View of LLMs on TPUs](https://jax-ml.github.io/scaling-book/)
 - [Domain-specific architectures for AI inference](https://fleetwood.dev/posts/domain-specific-architectures)
