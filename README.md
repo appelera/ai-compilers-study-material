@@ -7,11 +7,9 @@
 - https://docs.google.com/presentation/d/1RZdV3Z-Q1NEbpU1-qk9C97yE1QvwNLJ9Gc7JLaFLZCw/edit?slide=id.p#slide=id.p
 
 ### Papers
-- List of papers
-  - https://github.com/merrymercy/awesome-tensor-compilers?tab=readme-ov-file#compiler-and-ir-design
-  - https://carpedm30.notion.site/AI-Compiler-Study-aaf4cff2c8734e50ad95ac6230dbd80b
-- Although there is [a survey paper](https://arxiv.org/abs/2002.03794), it is a bit outdated (2020).
-- So I'd rather recommend reading recent ML/DL/AI compiler papers on ASPLOS/MLSys/PLDI, such as:
+- List of papers: https://github.com/merrymercy/awesome-tensor-compilers?tab=readme-ov-file#compiler-and-ir-design
+- There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
+- I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS / MLSys / PLDI / ISCA, such as:
   - https://arxiv.org/abs/1802.04799
   - https://arxiv.org/pdf/2411.07211
   - https://arxiv.org/pdf/2311.02103
@@ -23,18 +21,26 @@
   - https://arxiv.org/pdf/2311.01282
 
 ### Open-source projects
-- TVM and XLA are the OG open-source standards, but their popularity is going down these days.
-- At the state of 2025, PyTorch 2 compilers + Triton is worth looking at
+- [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) are the OG open-source standards, but their popularity is going down these days.
+- At the state of 2025, PyTorch 2 compilers (TorchDynamo & TorchInductor) + Triton are the modern tools:
   - paper: https://dl.acm.org/doi/abs/10.1145/3620665.3640366, https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf
   - repo: https://github.com/pytorch/pytorch/tree/main/torch/_inductor, https://github.com/triton-lang/triton
-- Or [CUTLASS and CuTe](https://docs.nvidia.com/cutlass/index.html)
+- For more lower-level GPU optimizations (lower than Triton yet higher than CUDA), refer to [CUTLASS](https://docs.nvidia.com/cutlass/index.html).
 
 ### Hands-on tutorials
 - TVM
   - https://mlc.ai/
   - https://tvm.d2l.ai/
 - Triton
-  - https://triton-lang.org/main/getting-started/tutorials/index.html
   - https://github.com/srush/Triton-Puzzles
-- TorchInductor
+  - https://triton-lang.org/main/getting-started/tutorials/index.html
+- TorchDynamo & TorchInductor
+  - https://github.com/meta-pytorch/workshops/tree/master/ASPLOS_2024
   - https://docs.google.com/document/d/1zY9Nlmh5jT39Q92aDYf3dHOAXh2xCMdeS6pnbX0Dqpw/edit?tab=t.0#heading=h.8exgp9nti6e2
+ 
+### Other materials
+- [GPU MODE Youtube channel](https://www.youtube.com/@GPUMODE)
+- [AI compilers study by Taehoon Kim](https://carpedm30.notion.site/AI-Compiler-Study-aaf4cff2c8734e50ad95ac6230dbd80b)
+- [Matrix Multiplication on Blackwell](https://www.modular.com/categories/engineering)
+- [How to Scale Your Model: A Systems View of LLMs on TPUs](https://jax-ml.github.io/scaling-book/)
+- [Domain-specific architectures for AI inference](https://fleetwood.dev/posts/domain-specific-architectures)
