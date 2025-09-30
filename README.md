@@ -37,7 +37,7 @@ This repository is designed as a focused resource for individuals beginning work
   - https://triton-lang.org/main/getting-started/tutorials/index.html
 - PyTorch 2 compilers
   - https://github.com/meta-pytorch/workshops/tree/master/ASPLOS_2024
-  - https://docs.google.com/document/d/1zY9Nlmh5jT39Q92aDYf3dHOAXh2xCMdeS6pnbX0Dqpw/edit?tab=t.0#heading=h.8exgp9nti6e2
+  - https://docs.google.com/document/d/1zY9Nlmh5jT39Q92aDYf3dHOAXh2xCMdeS6pnbX0Dqpw/edit?usp=drivesdk
  
 ### Other useful materials
 - [GPU MODE Youtube channel](https://www.youtube.com/@GPUMODE)
