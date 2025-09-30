@@ -12,23 +12,16 @@ I've curated the most useful resources I've found so far.
 - Some experience on parallel programming and GPUs (e.g., implementing matmul on CUDA).
 
 ### High-level ideas
--  https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html
-- https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers
+- [A friendly introduction to machine learning compilers and optimizers](https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html)
+- [Democratizing AI compute: Part 6](https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers)
   - Strongly recommend to read the full series
-- https://docs.google.com/presentation/d/1RZdV3Z-Q1NEbpU1-qk9C97yE1QvwNLJ9Gc7JLaFLZCw/edit?slide=id.p#slide=id.p
+- [Introduction to AI compilers](https://docs.google.com/presentation/d/1RZdV3Z-Q1NEbpU1-qk9C97yE1QvwNLJ9Gc7JLaFLZCw/edit?slide=id.p#slide=id.p)
 
 ### Papers
 - [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
 - There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
-- I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as:
-  - https://arxiv.org/pdf/2311.02103
-  - https://arxiv.org/pdf/2504.07004
-  - https://arxiv.org/pdf/2411.07211
-- FlashAttention series are also recommended to understand the gist of kernel optimization for LLMs.
-  - https://arxiv.org/pdf/2205.14135
-  - https://arxiv.org/pdf/2307.08691
-  - https://arxiv.org/pdf/2407.08608
-  - https://arxiv.org/pdf/2311.01282
+- I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as [Relax](https://arxiv.org/pdf/2311.02103), [Cypress](https://arxiv.org/pdf/2504.07004), [Exo2](https://arxiv.org/pdf/2411.07211)
+- FlashAttention series are also recommended to understand the gist of kernel optimization for LLMs[1](https://arxiv.org/pdf/2205.14135)[2](https://arxiv.org/pdf/2307.08691)[3](https://arxiv.org/pdf/2407.08608)[decoding](https://arxiv.org/pdf/2311.01282).
 
 ### Open-source projects
 - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) are the OG open-source standards, but their popularity seems like going down these days.
