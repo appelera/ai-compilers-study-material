@@ -1,11 +1,11 @@
 ## AI compilers study materials 
 
 ### Description
-This repository is intended to help someone who wants to start working on the fields of AI compilers and systems.
+This repository is designed as a focused resource for individuals beginning work in the field of AI compilers and systems.
 
-By "AI compilers", I've meant a SW stack which translates and optimizes DNN models into assembly at accelerators, such as GPUs or NPUs.
+​By AI compilers, I specifically refer to the software stack responsible for translating and optimizing DNN models into efficient assembly code for various accelerators, including GPUs and NPUs.
 
-I've curated the most useful resources I've found so far.
+​I have curated the most valuable resources I've encountered to date—including two original materials I developed—to provide a solid starting point.
 
 ### Prerequisites
 - Basic understanding of DNN and Transformer architectures.
@@ -20,7 +20,7 @@ I've curated the most useful resources I've found so far.
 ### Papers
 - [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
 - There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
-- I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as [Relax](https://arxiv.org/pdf/2311.02103), [Cypress](https://arxiv.org/pdf/2504.07004), [Exo2](https://arxiv.org/pdf/2411.07211).
+- I'd recommend skimming through recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as [Relax](https://arxiv.org/pdf/2311.02103), [Cypress](https://arxiv.org/pdf/2504.07004), [Exo2](https://arxiv.org/pdf/2411.07211).
 - FlashAttention series are also recommended to understand the gist of kernel optimization for LLMs[[1](https://arxiv.org/pdf/2205.14135)][[2](https://arxiv.org/pdf/2307.08691)][[3](https://arxiv.org/pdf/2407.08608)][[decoding](https://arxiv.org/pdf/2311.01282)].
 
 ### Open-source projects
