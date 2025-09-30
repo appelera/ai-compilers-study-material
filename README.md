@@ -1,13 +1,24 @@
 ## AI compilers studying materials 
 
+### Description
+This repository is intended to help someone who wants to start working on the fields of AI compilers and systems.
+
+By "AI compilers", I've meant a SW stack which translates DNN models into assembly at accelerators, such as GPUs or NPUs.
+
+I've curated the most useful resources I've found so far.
+
+### Prerequisites
+- Basic understanding of DNN and Transformer architectures.
+- Some experience on parallel programming and GPUs (e.g., implementing matmul on CUDA).
+
 ### High-level ideas
-- https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html
+-  https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html
 - https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers
   - Strongly recommend to read the full series
 - https://docs.google.com/presentation/d/1RZdV3Z-Q1NEbpU1-qk9C97yE1QvwNLJ9Gc7JLaFLZCw/edit?slide=id.p#slide=id.p
 
 ### Papers
-- List of papers: https://github.com/merrymercy/awesome-tensor-compilers
+- [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
 - There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
 - I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as:
   - https://arxiv.org/pdf/2411.07211
