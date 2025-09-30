@@ -3,7 +3,7 @@
 ### Description
 This repository is intended to help someone who wants to start working on the fields of AI compilers and systems.
 
-By "AI compilers", I've meant a SW stack which translates DNN models into assembly at accelerators, such as GPUs or NPUs.
+By "AI compilers", I've meant a SW stack which translates and optimizes DNN models into assembly at accelerators, such as GPUs or NPUs.
 
 I've curated the most useful resources I've found so far.
 
