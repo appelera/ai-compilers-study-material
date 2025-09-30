@@ -13,7 +13,7 @@
   - https://arxiv.org/pdf/2411.07211
   - https://arxiv.org/pdf/2311.02103
   - https://arxiv.org/pdf/2504.07004
-- FlashAttention series are also recommended to understand the gist of kernel optimization for Transformers / LLMs.
+- FlashAttention series are also recommended to understand the gist of kernel optimization for LLMs.
   - https://arxiv.org/pdf/2205.14135
   - https://arxiv.org/pdf/2307.08691
   - https://arxiv.org/pdf/2407.08608
