@@ -21,8 +21,8 @@
 
 ### Open-source projects
 - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) are the OG open-source standards, but their popularity is going down these days.
-- At the state of 2025, PyTorch 2 compilers (TorchDynamo & TorchInductor) + Triton are the modern tools:
-  - paper: https://dl.acm.org/doi/abs/10.1145/3620665.3640366, https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf
+- At the state of 2025, PyTorch 2 compilers[[paper](https://dl.acm.org/doi/abs/10.1145/3620665.3640366)] + Triton are the modern tools:
+  - paper: , https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf
   - repo: https://github.com/pytorch/pytorch/tree/main/torch/_inductor, https://github.com/triton-lang/triton
 - For more lower-level GPU optimizations (lower than Triton yet higher than CUDA), refer to [CUTLASS](https://docs.nvidia.com/cutlass/index.html).
 
