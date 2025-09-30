@@ -42,6 +42,6 @@ I've curated the most useful resources I've found so far.
 ### Other useful materials
 - [GPU MODE Youtube channel](https://www.youtube.com/@GPUMODE)
 - [AI compilers study](https://carpedm30.notion.site/AI-Compiler-Study-aaf4cff2c8734e50ad95ac6230dbd80b)
-- [Matrix Multiplication on Blackwell](https://www.modular.com/categories/engineering)
+- [Matrix Multiplication on Blackwell](https://www.modular.com/blog/matrix-multiplication-on-nvidias-blackwell-part-1-introduction)
 - [How to Scale Your Model: A Systems View of LLMs on TPUs](https://jax-ml.github.io/scaling-book/)
 - [Domain-specific architectures for AI inference](https://fleetwood.dev/posts/domain-specific-architectures)
