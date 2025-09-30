@@ -9,8 +9,7 @@
 ### Papers
 - List of papers: https://github.com/merrymercy/awesome-tensor-compilers?tab=readme-ov-file#compiler-and-ir-design
 - There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
-- I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS / MLSys / PLDI / ISCA, such as:
-  - https://arxiv.org/abs/1802.04799
+- I'd recommend reading recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as:
   - https://arxiv.org/pdf/2411.07211
   - https://arxiv.org/pdf/2311.02103
   - https://arxiv.org/pdf/2504.07004
