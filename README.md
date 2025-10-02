@@ -27,6 +27,9 @@ This repository is designed as a focused resource for individuals beginning work
 - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) are the OG open-source standards, but their popularity seems like going down these days.
 - At the state of 2025, PyTorch 2 compilers[[paper](https://dl.acm.org/doi/pdf/10.1145/3620665.3640366)][[repo](https://github.com/pytorch/pytorch/tree/main/torch/_inductor)] with Triton[[paper](https://www.eecs.harvard.edu/~htk/publication/2019-mapl-tillet-kung-cox.pdf)][[repo](https://github.com/triton-lang/triton)] are a good choice.
 - For more lower-level GPU optimizations (lower than Triton yet higher than CUDA), refer to [CUTLASS](https://docs.nvidia.com/cutlass/index.html).
+- Note on Triton:
+  - For recent Hopper/Blackwell GPUs, Triton struggles to achieve optimal performance due to increased complexity of GPU.
+  - To mitigate this, [Gluon](https://github.com/triton-lang/triton/blob/main/python/tutorials/gluon/01-intro.py) is being developed within the Triton ecosystem, which exposes more lower-level controls akin to CUTLASS.
 
 ### Hands-on tutorials
 - TVM
