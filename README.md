@@ -50,7 +50,7 @@ This repository is designed as a focused resource for individuals beginning work
 
 #### LLM runtimes
 - [vLLM](https://github.com/vllm-project/vllm)
-- [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
+- NVIDIA [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
 
 #### Kernel languages
 - NVIDIA [CUTLASS](https://docs.nvidia.com/cutlass/index.html)
