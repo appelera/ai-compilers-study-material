@@ -25,15 +25,15 @@ This repository is designed as a focused resource for individuals beginning work
 
 ### Frameworks
 #### A bit of context
-- In pre-LLM era, AI compilers referred to **graph compilers + kernel languages**. 
+- In pre-LLM era, AI compilers consist of **graph compilers + kernel libraries/compilers**. 
   - Graph compilers perform various computational graph-level optimizations, e.g., operator fusion, constant folding, quantization.
-  - Kernel languages are for implementing individual operators, e.g., a GPU kernel for matmul.
-  - Kernels can be crafted by either directly programming in the language (kernel libraries) or generating using the language as an IR (kernel compilers).
-  - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were most popular compiler frameworks, but losing interests recently.
-- After the domination of Transformer-based LLMs, AI compilers have more or less become **LLM runtimes + kernel languages**.
-  - It became crucial to support various runtime strategies (e.g., KV caching, iterative scheduling, speculative decoding) given the regular structure of Transformers.
-  - Hence, rather than general-purpose graph compilers, LLM runtimes + attention kernels optimized for such runtimes.
+  - Kernels for individual operators can be crafted by either direct programming (*kernel libraries*) or (semi-)automatic generation (*kernel compilers*).
+  - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were most popular compiler frameworks.
+- After the domination of LLMs, the focus has shifted to **LLM runtimes + attention kernels**.
+  - LLMs, or autoregressive token generation with Transformer, has become the core workload instead of diverse DNNs.
+  - Hence, it is crucial to optimize the performance to the last bit via runtime strategies (e.g., KV caching, iterative scheduling, speculative decoding) and attention kernels.
   - [vLLM](https://github.com/vllm-project/vllm) runtime + attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton) are the popular choice.
+  - Nonetheless, graph compilers can still accelerate the rest of the model[[example](https://docs.vllm.ai/en/latest/design/torch_compile.html#python-code-compilation)].
 - Note that [`torch.compile`](https://docs.pytorch.org/tutorials/intermediate/torch_compile_tutorial.html), or [TorchDynamo](https://github.com/pytorch/pytorch/tree/main/torch/_dynamo), is orthogonal from this taxonomy.
   - It is for *graph capture*, capturing computational graphs during PyTorch's eager execution, allowing graph-level optimization or backward graph generation.
   - Thus, they can be used together with other compilers and runtimes.
