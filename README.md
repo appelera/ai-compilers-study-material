@@ -32,8 +32,8 @@ This repository is designed as a focused resource for individuals beginning work
   - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were most popular compiler frameworks, but losing interests recently.
 - After the domination of Transformer-based LLMs, AI compilers have more or less become **LLM runtimes + kernel languages**.
   - It became crucial to support various runtime strategies (e.g., KV caching, iterative scheduling, speculative decoding) given the regular structure of Transformers.
-  - Hence, rather than general-purpose graph compilers, LLM-tailored runtimes + attention kernels optimized for such runtimes.
-  - De facto frameworks are [vLLM](https://github.com/vllm-project/vllm) runtime + attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton).
+  - Hence, rather than general-purpose graph compilers, LLM runtimes + attention kernels optimized for such runtimes.
+  - [vLLM](https://github.com/vllm-project/vllm) runtime + attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton) are the popular choice.
 - Note that [`torch.compile`](https://docs.pytorch.org/tutorials/intermediate/torch_compile_tutorial.html), or [TorchDynamo](https://github.com/pytorch/pytorch/tree/main/torch/_dynamo), is orthogonal from this taxonomy.
   - It is for *graph capture*, capturing computational graphs during PyTorch's eager execution, allowing graph-level optimization or backward graph generation.
   - Thus, they can be used together with other compilers and runtimes.
