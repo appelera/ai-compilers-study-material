@@ -25,36 +25,38 @@ This repository is designed as a focused resource for individuals beginning work
 
 ### Frameworks
 #### A bit of context
-- In pre-LLM (or GenAI) era, AI compilers referred to **graph compilers + kernel languages**. 
+- In pre-LLM era, AI compilers referred to **graph compilers + kernel languages**. 
   - Graph compilers perform various computational graph-level optimizations, e.g., operator fusion, constant folding, quantization.
   - Kernel languages are for implementing individual operators, e.g., a GPU kernel for matmul.
   - Kernels can be crafted by either directly programming in the language (kernel libraries) or generating using the language as an IR (kernel compilers).
-  - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were most popular fraemworks in this aspect.
+  - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were most popular compiler frameworks, but losing interests recently.
 - After the domination of Transformer-based LLMs, AI compilers have more or less become **LLM runtimes + kernel languages**.
-  - It became more important to support various runtime strategies (e.g., KV caching, iterative scheduling, speculative decoding) given the regular structure of Transformers.
+  - It became crucial to support various runtime strategies (e.g., KV caching, iterative scheduling, speculative decoding) given the regular structure of Transformers.
   - Hence, rather than general-purpose graph compilers, LLM-tailored runtimes + attention kernels optimized for such runtimes.
-  - The standard seems to be [vLLM](https://github.com/vllm-project/vllm) runtime + attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton).
-- Note that `torch.compile`, or [TorchDynamo](https://github.com/pytorch/torchdynamo), is orthogonal from this taxonomy.
+  - De facto frameworks are [vLLM](https://github.com/vllm-project/vllm) runtime + attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton).
+- Note that [`torch.compile`](https://docs.pytorch.org/tutorials/intermediate/torch_compile_tutorial.html), or [TorchDynamo](https://github.com/pytorch/pytorch/tree/main/torch/_dynamo), is orthogonal from this taxonomy.
   - It is for *graph capture*, capturing computational graphs during PyTorch's eager execution, allowing graph-level optimization or backward graph generation.
   - Thus, they can be used together with other compilers and runtimes.
 
 #### Graph compilers + Kernel libraries
-- NVIDIA TensorRT + cuDNN
-- Intel OpenVino + oneDNN
+- NVIDIA [TensorRT](https://github.com/NVIDIA/TensorRT) + [cuDNN](https://developer.nvidia.com/cudnn)
+  - Core logics are closed-sourced.
+- Intel [OpenVino](https://github.com/openvinotoolkit/openvino) + [oneDNN](https://github.com/uxlfoundation/oneDNN)
 
 #### Graph & Kernel compilers
-- TorchInductor
-- TVM
-- XLA
+- [TorchInductor](https://github.com/pytorch/pytorch/tree/main/torch/_inductor)
+- [TVM](https://github.com/apache/tvm)
+- [XLA](https://github.com/openxla/xla)
 
 #### LLM runtimes
-- vLLM
-- NVIDIA TensorRT-LLM
+- [vLLM](https://github.com/vllm-project/vllm)
+- [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
 
 #### Kernel languages
-- NVIDIA CUTLASS
+- NVIDIA [CUTLASS](https://docs.nvidia.com/cutlass/index.html)
   - Higher abstraction level than CUDA.
-- Triton
+- [Triton](https://github.com/triton-lang/triton)
+  - Higher abstraction level than CUTLASS, allowing easier kernel programming.
   - For recent Hopper/Blackwell GPUs, Triton struggles to achieve optimal performance due to the increased complexity of GPU.
   - To mitigate this, [Gluon](https://github.com/triton-lang/triton/blob/main/python/tutorials/gluon/01-intro.py) is being developed within the Triton ecosystem, which exposes more lower-level controls akin to CUTLASS.
 
