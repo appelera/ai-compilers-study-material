@@ -23,13 +23,13 @@ This repository is designed as a focused resource for individuals beginning work
   - Kernels for individual operators can be crafted by direct programming (*kernel libraries*) or automatic generation (*kernel compilers*).
   - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were the most popular compiler frameworks.
 - After the domination of LLMs, the focus has shifted to **LLM runtimes + attention kernels**.
-  - LLMs, or autoregressive Transformers, has become the core workload.
-  - Hence, it is crucial to optimize its performance to the last bit via runtime strategies and attention algorithms & kernels.
+  - LLMs, or autoregressive Transformers with self-attention, has become the core workload.
+  - Hence, it is crucial to optimize its performance to the last bit via runtime strategies and custom attention kernels.
   - [vLLM](https://github.com/vllm-project/vllm) runtime with attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton) is a popular choice.
 - Nonetheless, AI compilers remain to be an important topic. 
-  - Graph compilers can still be utilized accelerate the rest of the model[[example](https://docs.vllm.ai/en/latest/design/torch_compile.html#python-code-compilation)].
-  - Kernel programming, especially for recent GPU architectures, remains to be very complex and ad-hoc[todo]().
-  - AI compilers can support faster prototyping for different attention algorithms, or even non-Transformer models like [Mamba](https://arxiv.org/pdf/2312.00752).
+  - Graph compilers can accelerate the rest of the model[[example](https://blog.vllm.ai/2025/08/20/torch-compile.html)], used together with custom attention kernels.
+  - Kernel programming, especially for recent GPU architectures, remains to be complex and ad-hoc[paper](https://arxiv.org/html/2504.07004v1).
+  - AI compilers can support faster prototyping for different attention algorithms, or even non-Transformer models like [mamba](https://arxiv.org/pdf/2312.00752).
 
 ### Papers
 - [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
