@@ -28,8 +28,8 @@ This repository is designed as a focused resource for individuals beginning work
   - [vLLM](https://github.com/vllm-project/vllm) runtime with attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton) is a popular choice.
 - Nonetheless, AI compilers remain to be an important topic. 
   - Graph compilers can accelerate the rest of the model[[example](https://blog.vllm.ai/2025/08/20/torch-compile.html)], used together with custom attention kernels.
-  - Kernel programming, especially for recent GPU architectures, remains to be complex and ad-hoc[paper](https://arxiv.org/html/2504.07004v1).
-  - AI compilers can support faster prototyping for different attention algorithms, or even non-Transformer models like [mamba](https://arxiv.org/pdf/2312.00752).
+  - Kernel programming, especially for recent GPU architectures, remains to be complex and ad-hoc[[paper](https://arxiv.org/html/2504.07004v1)].
+  - AI compilers can support faster prototyping for different attention algorithms, or even non-Transformer models [[mamba](https://arxiv.org/pdf/2312.00752)].
 
 ### Papers
 - [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
